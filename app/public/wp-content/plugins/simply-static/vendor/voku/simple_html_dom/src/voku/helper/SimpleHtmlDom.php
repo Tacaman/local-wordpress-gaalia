@@ -203,6 +203,7 @@ class SimpleHtmlDom extends AbstractSimpleHtmlDom implements \IteratorAggregate,
                 $newDocument->getDocument()->documentElement
             ) {
                 $newNode = $ownerDocument->importNode($newDocument->getDocument()->documentElement, true);
+                /** @noinspection UnusedFunctionResultInspection */
                 $this->node->appendChild($newNode);
             }
         }
@@ -277,6 +278,7 @@ class SimpleHtmlDom extends AbstractSimpleHtmlDom implements \IteratorAggregate,
                         $fragment->appendChild($tmpNode);
                     }
                 }
+                /** @noinspection UnusedFunctionResultInspection */
                 $html->parentNode->replaceChild($fragment, $html);
             }
         }
@@ -723,6 +725,7 @@ class SimpleHtmlDom extends AbstractSimpleHtmlDom implements \IteratorAggregate,
                 if ($options instanceof SimpleHtmlDomNode) {
                     foreach ($options as $option) {
                         if ($this->hasAttribute('checked')) {
+                            /** @noinspection UnnecessaryCastingInspection */
                             $valuesFromDom[] = (string) $option->getAttribute('value');
                         }
                     }
@@ -788,6 +791,7 @@ class SimpleHtmlDom extends AbstractSimpleHtmlDom implements \IteratorAggregate,
 
             // Remove doc-type node.
             if ($newDocument->getDocument()->doctype !== null) {
+                /** @noinspection UnusedFunctionResultInspection */
                 $newDocument->getDocument()->doctype->parentNode->removeChild($newDocument->getDocument()->doctype);
             }
 
@@ -814,6 +818,7 @@ class SimpleHtmlDom extends AbstractSimpleHtmlDom implements \IteratorAggregate,
                     }
 
                     if ($pElement->parentNode !== null) {
+                        /** @noinspection UnusedFunctionResultInspection */
                         $pElement->parentNode->replaceChild($fragment, $pElement);
                     }
                 }
@@ -833,6 +838,7 @@ class SimpleHtmlDom extends AbstractSimpleHtmlDom implements \IteratorAggregate,
                 }
 
                 if ($body->parentNode !== null) {
+                    /** @noinspection UnusedFunctionResultInspection */
                     $body->parentNode->replaceChild($fragment, $body);
                 }
             }
@@ -864,6 +870,7 @@ class SimpleHtmlDom extends AbstractSimpleHtmlDom implements \IteratorAggregate,
                     }
                 }
 
+                /** @noinspection UnusedFunctionResultInspection */
                 $html->parentNode->replaceChild($fragment, $html);
             }
         }
