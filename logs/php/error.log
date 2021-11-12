@@ -60,3 +60,15 @@
 [10-Nov-2021 17:06:37 UTC] SITE: Storing in option ast-block-templates-sites-1
 [10-Nov-2021 17:06:37 UTC] SITE: Completed request 1
 [10-Nov-2021 17:06:37 UTC] Sync process for Gutenberg Blocks is done.
+[11-Nov-2021 22:54:53 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'FloatToTopButton' not found in C:\Users\diogo\Local Sites\gaalia\app\public\wp-includes\class-wp-hook.php on line 303
+[11-Nov-2021 22:54:53 UTC] PHP Stack trace:
+[11-Nov-2021 22:54:53 UTC] PHP   1. {main}() C:\Users\diogo\Local Sites\gaalia\app\public\wp-admin\admin-ajax.php:0
+[11-Nov-2021 22:54:53 UTC] PHP   2. do_action() C:\Users\diogo\Local Sites\gaalia\app\public\wp-admin\admin-ajax.php:187
+[11-Nov-2021 22:54:53 UTC] PHP   3. WP_Hook->do_action() C:\Users\diogo\Local Sites\gaalia\app\public\wp-includes\plugin.php:470
+[11-Nov-2021 22:54:53 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\diogo\Local Sites\gaalia\app\public\wp-includes\class-wp-hook.php:327
+[11-Nov-2021 22:54:53 UTC] PHP   5. wp_ajax_delete_plugin() C:\Users\diogo\Local Sites\gaalia\app\public\wp-includes\class-wp-hook.php:303
+[11-Nov-2021 22:54:53 UTC] PHP   6. delete_plugins() C:\Users\diogo\Local Sites\gaalia\app\public\wp-admin\includes\ajax-actions.php:4598
+[11-Nov-2021 22:54:53 UTC] PHP   7. uninstall_plugin() C:\Users\diogo\Local Sites\gaalia\app\public\wp-admin\includes\plugin.php:965
+[11-Nov-2021 22:54:53 UTC] PHP   8. do_action() C:\Users\diogo\Local Sites\gaalia\app\public\wp-admin\includes\plugin.php:1272
+[11-Nov-2021 22:54:53 UTC] PHP   9. WP_Hook->do_action() C:\Users\diogo\Local Sites\gaalia\app\public\wp-includes\plugin.php:470
+[11-Nov-2021 22:54:53 UTC] PHP  10. WP_Hook->apply_filters() C:\Users\diogo\Local Sites\gaalia\app\public\wp-includes\class-wp-hook.php:327
